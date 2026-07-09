@@ -262,7 +262,7 @@ document.getElementById(&quot;ownerInfo&quot;).style.display=&quot;block&quot;;
 btn.classList.remove(&quot;submitting&quot;);
 btn.classList.add(&quot;success&quot;);
 btn.innerText=&quot;✓ Submitted Successfully&quot;;
-history.pushState({}, "", window.location.pathname.replace(/\/$/, "") + "/thankyou");
+        history.pushState({}, "", window.location.pathname + "?thankyou");
 }
 
 }catch(err){
